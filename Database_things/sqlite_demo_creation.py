@@ -16,5 +16,5 @@ def create_connection(db_file):
 
 if __name__ == '__main__':
     create_connection(r"D:\\TestiRepository\\Database_things\\Mydatabase.db") #A connection to an SQLite database.
-
+# Running this file for the first time will implement / make the database file Mydatabase.db.
 
