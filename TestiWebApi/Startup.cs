@@ -26,6 +26,7 @@ namespace TestiWebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //Specify the policy.
             services.AddCors(options =>
             {
                 options.AddPolicy(name: "MyPolicy",
@@ -33,6 +34,7 @@ namespace TestiWebApi
                                   {
                                       builder.AllowAnyMethod();
                                       builder.AllowAnyOrigin();
+                                      builder.AllowAnyHeader();
                                   });
             });
 
@@ -50,14 +52,14 @@ namespace TestiWebApi
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "TestiWebApi v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebApiDemo v1"));
             }
 
             app.UseHttpsRedirection();
 
             app.UseRouting();
 
-            app.UseCors("MyPolicy");
+            app.UseCors("MyPolicy"); //Use the specified policy.
 
             app.UseAuthorization();
 

@@ -11,6 +11,8 @@ namespace TestiWebApi.Controllers
     [ApiController]
     public class TestiController : ControllerBase
     {
+        [HttpGet]
+        [Route("")]
         public string Hello()
         {
             return "Hello World!";

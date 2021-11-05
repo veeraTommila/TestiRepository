@@ -12,12 +12,13 @@ namespace TestiWebApi.Controllers
     [ApiController]
     public class CustomersController : ControllerBase
     {
+        [HttpGet]
+        [Route("")]
         public List<Customer> AllCustomers()
         {
             NorthwindContext context = new();
             List<Customer> allCustomers = context.Customers.ToList();
             return allCustomers;
-
         }
     }
 }
