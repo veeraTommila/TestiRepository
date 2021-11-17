@@ -118,3 +118,4 @@ D:\TestiRepository\TestiWebApi\obj\Debug\net5.0\TestiWebApi.dll
 D:\TestiRepository\TestiWebApi\obj\Debug\net5.0\ref\TestiWebApi.dll
 D:\TestiRepository\TestiWebApi\obj\Debug\net5.0\TestiWebApi.pdb
 D:\TestiRepository\TestiWebApi\obj\Debug\net5.0\TestiWebApi.genruntimeconfig.cache
+D:\TestiRepository\TestiWebApi\obj\Debug\net5.0\TestiWebApi.csproj.CopyComplete

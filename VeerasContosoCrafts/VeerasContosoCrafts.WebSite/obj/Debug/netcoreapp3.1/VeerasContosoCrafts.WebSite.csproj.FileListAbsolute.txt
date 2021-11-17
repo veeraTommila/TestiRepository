@@ -108,7 +108,6 @@ D:\TestiRepository\VeerasContosoCrafts\VeerasContosoCrafts.WebSite\obj\Debug\net
 D:\TestiRepository\VeerasContosoCrafts\VeerasContosoCrafts.WebSite\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
 D:\TestiRepository\VeerasContosoCrafts\VeerasContosoCrafts.WebSite\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
 D:\TestiRepository\VeerasContosoCrafts\VeerasContosoCrafts.WebSite\obj\Debug\netcoreapp3.1\Razor\Pages\Info.cshtml.g.cs
-D:\TestiRepository\VeerasContosoCrafts\VeerasContosoCrafts.WebSite\obj\Debug\netcoreapp3.1\Razor\Pages\Nomi.cshtml.g.cs
 D:\TestiRepository\VeerasContosoCrafts\VeerasContosoCrafts.WebSite\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
 D:\TestiRepository\VeerasContosoCrafts\VeerasContosoCrafts.WebSite\obj\Debug\netcoreapp3.1\Razor\Pages\Products.cshtml.g.cs
 D:\TestiRepository\VeerasContosoCrafts\VeerasContosoCrafts.WebSite\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
@@ -122,3 +121,4 @@ D:\TestiRepository\VeerasContosoCrafts\VeerasContosoCrafts.WebSite\obj\Debug\net
 D:\TestiRepository\VeerasContosoCrafts\VeerasContosoCrafts.WebSite\obj\Debug\netcoreapp3.1\VeerasContosoCrafts.WebSite.pdb
 D:\TestiRepository\VeerasContosoCrafts\VeerasContosoCrafts.WebSite\obj\Debug\netcoreapp3.1\VeerasContosoCrafts.WebSite.genruntimeconfig.cache
 D:\TestiRepository\VeerasContosoCrafts\VeerasContosoCrafts.WebSite\obj\Debug\netcoreapp3.1\VeerasContosoCrafts.WebSite.csproj.CopyComplete
+D:\TestiRepository\VeerasContosoCrafts\VeerasContosoCrafts.WebSite\obj\Debug\netcoreapp3.1\Razor\Pages\CartoonDrawing.cshtml.g.cs

@@ -78,7 +78,7 @@ div1 {
 }
 
 a{
-    color: #006600;
+    color: #006600;    
 }
 
 /* Sticky footer styles and the typography
@@ -226,4 +226,12 @@ div.desc {
     content: "";
     display: table;
     clear: both;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
 }
