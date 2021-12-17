@@ -6,7 +6,7 @@
  * Ihminen-luokassa.
  * */
 
-import java.util.Scanner;
+import java.util.Scanner; 
 
 class Immeinen {
 	int ikä;
