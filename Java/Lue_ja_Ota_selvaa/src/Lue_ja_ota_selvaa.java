@@ -3,7 +3,6 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Lue_ja_ota_selvaa {
-
 	public static void main(String[] args) {
 		try {
 			File tiedostoOlio1 = new File("pisteet.txt");
