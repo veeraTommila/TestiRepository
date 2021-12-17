@@ -1,17 +1,17 @@
 /*
- * Tässä tehtävässä käytetään perintää.
- * Henkilö-luokka perii ominaisuuksia ja 
+ * TÃ¤ssÃ¤ tehtÃ¤vÃ¤ssÃ¤ kÃ¤ytetÃ¤Ã¤n perintÃ¤Ã¤.
+ * HenkilÃ¶-luokka perii ominaisuuksia ja 
  * toiminnallisuuksia Immeinen-luokasta.
- * Henkilö-luokasta luodaan olioita julkisessa
+ * HenkilÃ¶-luokasta luodaan olioita julkisessa
  * Ihminen-luokassa.
  * */
 
 import java.util.Scanner;
 
 class Immeinen {
-	int ikä;
+	int ikÃ¤;
 	double paino;
-	String ihonväri;
+	String ihonvÃ¤ri;
 	String kansalaisuus;
 	String sukupuoli;	
 	String sanonta;
@@ -23,54 +23,54 @@ class Immeinen {
 	public Immeinen() {		
 	}
 	
-	public Immeinen(int ikä, double paino, String ihonväri, String kansalaisuus, String sukupuoli, String sanonta){
-        this.ikä = ikä;
+	public Immeinen(int ikÃ¤, double paino, String ihonvÃ¤ri, String kansalaisuus, String sukupuoli, String sanonta){
+        this.ikÃ¤ = ikÃ¤;
         this.paino = paino;
-        this.ihonväri = ihonväri;
+        this.ihonvÃ¤ri = ihonvÃ¤ri;
         this.kansalaisuus = kansalaisuus;
         this.sukupuoli = sukupuoli;
         this.sanonta = sanonta;
 	}
 	
 	void kerroTiedot(){
-        System.out.println("Ikä: " + this.ikä);
+        System.out.println("IkÃ¤: " + this.ikÃ¤);
         System.out.println("Paino: " + this.paino);       
-        System.out.println("Ihonväri: " + this.ihonväri);
+        System.out.println("IhonvÃ¤ri: " + this.ihonvÃ¤ri);
         System.out.println("Kansalaisuus: " + this.kansalaisuus);
         System.out.println("Sukupuoli: " + this.sukupuoli);        
     }
 	
 }
 
-class Henkilö extends Immeinen{
+class HenkilÃ¶ extends Immeinen{
 	private String etunimi;
 	private String sukunimi;
 	private String sossu;
 	
-	public Henkilö(int ikä, double paino, String ihonväri, String kansalaisuus, String sukupuoli, String sanonta, String etunimi, String sukunimi, String sossu) {
-        super(ikä,paino,ihonväri,kansalaisuus,sukupuoli,sanonta);        
+	public HenkilÃ¶(int ikÃ¤, double paino, String ihonvÃ¤ri, String kansalaisuus, String sukupuoli, String sanonta, String etunimi, String sukunimi, String sossu) {
+        super(ikÃ¤,paino,ihonvÃ¤ri,kansalaisuus,sukupuoli,sanonta);        
         this.etunimi = etunimi;  
         this.sukunimi = sukunimi;
         this.sossu = sossu;
     }
 	
-	public Henkilö() {
+	public HenkilÃ¶() {
 		
 	}	
 	
 	public void kerroTiedot(){
 		System.out.println("Etunimi: " + this.etunimi);
 		System.out.println("Sukunimi: " + this.sukunimi);
-        System.out.println("Ikä: " + this.ikä);
+        System.out.println("IkÃ¤: " + this.ikÃ¤);
         System.out.println("Sossu: " + this.sossu);
         System.out.println("Paino: " + this.paino);       
-        System.out.println("Ihonväri: " + this.ihonväri);
+        System.out.println("IhonvÃ¤ri: " + this.ihonvÃ¤ri);
         System.out.println("Kansalaisuus: " + this.kansalaisuus);
         System.out.println("Sukupuoli: " + this.sukupuoli);        
     }
 	
 	public void tervehdi(){
-        System.out.println("Hän sanoo: "+sanonta);
+        System.out.println("HÃ¤n sanoo: "+sanonta);
     }
 }
 
@@ -78,23 +78,23 @@ public class Ihminen{
 	public static void main(String[] args) {
 		//Luodaan ihmisolioita luokista.
 		Immeinen yksi = new Immeinen(28, 80.2, "vaaleanruskea", "englantilainen", "nainen", "Hello! ");
-		Henkilö henkilö1 = new Henkilö(29, 80.2, "ruskea", "intialainen", "mies", "Namashte!", "Amar", "Ghuru", "170992-1432");
-		Henkilö henkilö2 = new Henkilö(31, 69.9, "vaaleankellanruskea", "japanilainen", "nainen", "Konnichiwa!", "Kinu", "Nakamoto", "170990A7238X");
+		HenkilÃ¶ henkilÃ¶1 = new HenkilÃ¶(29, 80.2, "ruskea", "intialainen", "mies", "Namashte!", "Amar", "Ghuru", "170992-1432");
+		HenkilÃ¶ henkilÃ¶2 = new HenkilÃ¶(31, 69.9, "vaaleankellanruskea", "japanilainen", "nainen", "Konnichiwa!", "Kinu", "Nakamoto", "170990A7238X");
 
-		Henkilö joku = new Henkilö(); 
+		HenkilÃ¶ joku = new HenkilÃ¶(); 
 		
 		yksi.kerroTiedot();
 		yksi.tervehdi(); 
 		
 		System.out.println("");
 						
-		henkilö1.kerroTiedot();
-		henkilö1.tervehdi();
+		henkilÃ¶1.kerroTiedot();
+		henkilÃ¶1.tervehdi();
 		
 		System.out.println("");
 				
-		henkilö2.kerroTiedot();
-		henkilö2.tervehdi();
+		henkilÃ¶2.kerroTiedot();
+		henkilÃ¶2.tervehdi();
 	}	
 	
 }
