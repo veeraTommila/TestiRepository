@@ -3,7 +3,7 @@ public class Hei {
 
 	public static void main(String[] args) {
 		System.out.println("Hei, maailma!");
-		System.out.println("Hei kaikille!");
+		System.out.println("Hei kaikille!"); 
 		
 		int luku = 0;
 		
