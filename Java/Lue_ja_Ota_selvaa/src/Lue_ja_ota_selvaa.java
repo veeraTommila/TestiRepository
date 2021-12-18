@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Lue_ja_ota_selvaa {
 	public static void main(String[] args) {
-		try {
+		try { 
 			File tiedostoOlio1 = new File("D:\\TestiRepository\\Java\\Lue_ja_Ota_selvaa\\pisteet.txt");
 			Scanner lukijaOlio = new Scanner(tiedostoOlio1);
 			while (lukijaOlio.hasNextLine()) {
