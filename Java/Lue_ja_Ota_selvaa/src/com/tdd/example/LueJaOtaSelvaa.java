@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 import com.tdd.example.LueJaOtaSelvaa.vertailuVaihtoehdot;
 
+//The other updated file.
 public class LueJaOtaSelvaa {
 		
 
@@ -29,7 +30,7 @@ public class LueJaOtaSelvaa {
 			}
 			lukijaOlio.close();
 		}catch(FileNotFoundException e) {
-			System.out.println("Tapahtui virhe. Tiedostoa ei löytynyt.");
+			System.out.println("Tapahtui virhe. Tiedostoa ei lï¿½ytynyt.");
 			e.printStackTrace();
 		}
 		
@@ -44,7 +45,7 @@ public class LueJaOtaSelvaa {
 			}
 			lukijaOlio.close();
 		}catch(FileNotFoundException e) {
-			System.out.println("Tapahtui virhe. Tiedostoa ei löytynyt.");
+			System.out.println("Tapahtui virhe. Tiedostoa ei lï¿½ytynyt.");
 			e.printStackTrace();
 		}
 	}
@@ -57,27 +58,27 @@ public class LueJaOtaSelvaa {
 	 }
 	
 	public void vertailuVaihtoehdot() {
-		//Vertaile polygonin X:iä pisteiden X:iin.
-		//Vertaile polygonin Y:itä pisteiden Y:ihin.
+		//Vertaile polygonin X:iï¿½ pisteiden X:iin.
+		//Vertaile polygonin Y:itï¿½ pisteiden Y:ihin.
 		double x0 = 0.0, x1 = 0.0;
 		double y0 = 0.0, y1 = 0.0;
 		/*
-		 * Silloin koordinaatit ovat polygonin reunaviivan päällä,
-		 * kun x0 = 2, niin y0 = välillä 2 ja 4.
-		 * kun x1 = 4, niin y1 = välillä 2 ja 5
-		 * kun y0 = 2, niin x0 = välillä 2 ja 4
-		 * kun y1 = 0.5, niin x1 = välillä 2 ja 4.
-		 * Muissa tapauksissa ne ovat polygonin sisäpuolella tai ulkopuolella. 
+		 * Silloin koordinaatit ovat polygonin reunaviivan pï¿½ï¿½llï¿½,
+		 * kun x0 = 2, niin y0 = vï¿½lillï¿½ 2 ja 4.
+		 * kun x1 = 4, niin y1 = vï¿½lillï¿½ 2 ja 5
+		 * kun y0 = 2, niin x0 = vï¿½lillï¿½ 2 ja 4
+		 * kun y1 = 0.5, niin x1 = vï¿½lillï¿½ 2 ja 4.
+		 * Muissa tapauksissa ne ovat polygonin sisï¿½puolella tai ulkopuolella. 
 		 * */		
 		/*switch(olio1) {
 		case KOORDINAATITULKOPUOLELLA:
 			System.out.println("Koordinaatit ovat polygonin ulkopuolella.");
 			break;
 		case KOORDINAATITSISAPUOLELLA:
-			System.out.println("Koordinaatit ovat polygonin sisäpuolella.");
+			System.out.println("Koordinaatit ovat polygonin sisï¿½puolella.");
 			break;
 		case KOORDINAATITPAALLEKKAIN:
-			System.out.println("Koordinaatit ovat polygonin kanssa päällekkäin.");
+			System.out.println("Koordinaatit ovat polygonin kanssa pï¿½ï¿½llekkï¿½in.");
 			break;
 		}*/
 	if(x0 == 2.0 && y0 == 2.0 || y0 <=4.0 ) {
@@ -89,7 +90,7 @@ public class LueJaOtaSelvaa {
 		}else if(y1 == 0.5 && x1 == 2.0 || x1 <=4.0 ){
 			System.out.println("y1 == 0.5 && x1 == 2.0 || x1 <=4.0 ");			
 		}else {
-			System.out.println("Koordinaatit eivät ole polygonin päällä.");			
+			System.out.println("Koordinaatit eivï¿½t ole polygonin pï¿½ï¿½llï¿½.");			
 		}	
 	}
 }
