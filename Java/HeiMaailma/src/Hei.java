@@ -1,4 +1,3 @@
-
 public class Hei {
 
 	public static void main(String[] args) {
@@ -10,8 +9,6 @@ public class Hei {
 		for(int i = 0; i < 10; i++) {
 			luku++;
 			System.out.println("Hei, asukas kerroksessa "+luku+"!");
-		}
-				
+		}				
 	}
-
 }
