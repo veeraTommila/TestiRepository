@@ -12,7 +12,7 @@ public class Tyontekija {
 		LocalDateTime syntymäAika = LocalDateTime.now();
 		DateTimeFormatter syntymäAjanMuoto = DateTimeFormatter.ofPattern("31-11-1991 01:00:22");
 		String muotoiltuPäivämäärä = syntymäAika.format(syntymäAjanMuoto);		
-		
+				
 		System.out.println("Nimi: " + nimi);
 		System.out.println("palkka: " + palkka);
 		System.out.println("ikä: " + ikä);
