@@ -2,7 +2,6 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class painon_seuranta {
-
 	public static void main(String[] args) {
 		int i = 0;
         int suurin_paino = 0;
@@ -14,7 +13,7 @@ public class painon_seuranta {
         
         try (Scanner lukija = new Scanner(System.in)) {
 			for (i = 0; i < 7; i++){
-			    System.out.println("Anna " + (i+1) + " päivän paino kiloissa");
+			    System.out.println("Anna " + (i+1) + " pï¿½ivï¿½n paino kiloissa");
 			    paino = lukija.nextInt();
 			    
 			    painotaulukko[i] = paino;
@@ -34,7 +33,7 @@ public class painon_seuranta {
         System.out.println("Painojen keskiarvo on: " + summa/7);
         System.out.println("Suurin paino on: " + suurin_paino);
         System.out.println("Pienin paino on: "+ pienin_paino);
-        System.out.println("Painot järjestyksessä pienimmästä suurimpaan: ");
+        System.out.println("Painot jï¿½rjestyksessï¿½ pienimmï¿½stï¿½ suurimpaan: ");
         
         for (i = 0; i < 7; i++){
             System.out.println(painotaulukko[i]);
