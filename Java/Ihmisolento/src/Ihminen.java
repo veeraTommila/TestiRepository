@@ -73,7 +73,6 @@ class Henkilä extends Immeinen{
         System.out.println("Hän sanoo: "+sanonta);
     }
 }
-
 public class Ihminen{
 	public static void main(String[] args) {
 		//Luodaan ihmisolioita luokista.
