@@ -1,3 +1,6 @@
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 public class Tyontekija {
     public static void main(String[] args) {
 		String nimi = "Kalle Sörsselssön";
@@ -22,6 +25,5 @@ public class Tyontekija {
 		}else {
 			System.out.println(" "+ nimi + " on töissä.");
 		}                                              		
-	}
-
+	} 
 }
