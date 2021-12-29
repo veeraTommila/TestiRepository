@@ -38,8 +38,7 @@ class Immeinen {
         System.out.println("Ihonväri: " + this.ihonväri);
         System.out.println("Kansalaisuus: " + this.kansalaisuus);
         System.out.println("Sukupuoli: " + this.sukupuoli);        
-    }
-	
+    }	
 }
 
 class Henkilö extends Immeinen{
