@@ -12,6 +12,6 @@ public class Saldolaskuri {
 
         double yhteishinta = laskettuMinuuttihinta + laskettuTekstiviestihinta;
         
-        System.out.println("Puhelinlaskun hinta: "+yhteishinta+" euroa.");
+        System.out.println("Puhelinlaskun hinta: "+yhteishinta+" euroa."); 
     }    
 }
