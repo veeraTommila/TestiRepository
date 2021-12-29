@@ -5,6 +5,6 @@ public class Vuosi {
     public static void main(String[] args) {
         Clock clock = Clock.systemDefaultZone();
         Year vuosi = Year.now(clock);
-        System.out.println("Nyt on vuosi "+vuosi);
+        System.out.println("Nyt on vuosi "+vuosi); 
     }
 }
