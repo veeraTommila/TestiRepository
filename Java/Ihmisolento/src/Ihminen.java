@@ -1,8 +1,8 @@
 /*
  * Tässä tehtävässä käytetään perintää.
- * Henkilä-luokka perii ominaisuuksia ja 
+ * Henkilö-luokka perii ominaisuuksia ja 
  * toiminnallisuuksia Immeinen-luokasta.
- * Henkilä-luokasta luodaan olioita julkisessa
+ * Henkilö-luokasta luodaan olioita julkisessa
  * Ihminen-luokassa.
  * */
 
@@ -42,19 +42,19 @@ class Immeinen {
 	
 }
 
-class Henkilä extends Immeinen{
+class Henkilö extends Immeinen{
 	private String etunimi;
 	private String sukunimi;
 	private String sossu;
 	
-	public Henkilä(int ikä, double paino, String ihonväri, String kansalaisuus, String sukupuoli, String sanonta, String etunimi, String sukunimi, String sossu) {
+	public Henkilö(int ikä, double paino, String ihonväri, String kansalaisuus, String sukupuoli, String sanonta, String etunimi, String sukunimi, String sossu) {
         super(ikä,paino,ihonväri,kansalaisuus,sukupuoli,sanonta);        
         this.etunimi = etunimi;  
         this.sukunimi = sukunimi;
         this.sossu = sossu;
     }
 	
-	public Henkilä() {
+	public Henkilö() {
 		
 	}	
 	
@@ -77,23 +77,21 @@ public class Ihminen{
 	public static void main(String[] args) {
 		//Luodaan ihmisolioita luokista.
 		Immeinen yksi = new Immeinen(28, 80.2, "vaaleanruskea", "englantilainen", "nainen", "Hello! ");
-		Henkilä henkilä1 = new Henkilä(29, 80.2, "ruskea", "intialainen", "mies", "Namashte!", "Amar", "Ghuru", "170992-1432");
-		Henkilä henkilä2 = new Henkilä(31, 69.9, "vaaleankellanruskea", "japanilainen", "nainen", "Konnichiwa!", "Kinu", "Yamamoto", "170990A7238X");
-
-		Henkilä joku = new Henkilä(); 
+		Henkilö henkilö1 = new Henkilö(29, 80.2, "ruskea", "intialainen", "mies", "Namashte!", "Amar", "Ghuru", "170992-1432");
+		Henkilö henkilö2 = new Henkilö(31, 69.9, "vaaleankellanruskea", "japanilainen", "nainen", "Konnichiwa!", "Kinu", "Yamamoto", "170990A7238X");
 		
 		yksi.kerroTiedot();
 		yksi.tervehdi(); 
 		
 		System.out.println("");
 						
-		henkilä1.kerroTiedot();
-		henkilä1.tervehdi();
+		henkilö1.kerroTiedot();
+		henkilö1.tervehdi();
 		
 		System.out.println("");
 				
-		henkilä2.kerroTiedot();
-		henkilä2.tervehdi();
+		henkilö2.kerroTiedot();
+		henkilö2.tervehdi();
 	}	
 	
 }
