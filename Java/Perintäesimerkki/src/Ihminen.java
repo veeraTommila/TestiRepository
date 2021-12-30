@@ -79,8 +79,6 @@ public class Ihminen{
 		Immeinen yksi = new Immeinen(28, 80.2, "vaaleanruskea", "englantilainen", "nainen", "Hello! ");
 		Henkilö henkilö1 = new Henkilö(29, 80.2, "ruskea", "intialainen", "mies", "Namashte!", "Amar", "Ghuru", "170992-1432");
 		Henkilö henkilö2 = new Henkilö(31, 69.9, "vaaleankellanruskea", "japanilainen", "nainen", "Konnichiwa!", "Kinu", "Nakamoto", "170990A7238X");
-
-		Henkilö joku = new Henkilö(); 
 		
 		yksi.kerroTiedot();
 		yksi.tervehdi(); 
