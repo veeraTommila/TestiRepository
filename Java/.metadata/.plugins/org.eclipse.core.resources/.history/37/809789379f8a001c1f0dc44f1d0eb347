@@ -1,0 +1,80 @@
+
+//package binarytree;
+
+class Node {
+  Node left;
+  Node right;
+  int data;
+}
+
+class BinaryTree {
+  
+  public void sisajarjesta(Node node) {
+    if(node == null) {
+      return;
+    }
+    
+    sisajarjesta(node.left);
+    System.out.print(node.data + " ");
+    sisajarjesta(node.right);
+  }
+  
+  public void esijarjesta(Node node) {
+    if(node == null) {
+      return;
+    }
+    
+    System.out.print(node.data + " ");
+    esijarjesta(node.left);
+    esijarjesta(node.right);
+  }
+  
+  public void jälkijärjestä(Node node) {
+    if(node == null) {
+      return;
+    }
+    
+    jälkijärjestä(node.left);
+    jälkijärjestä(node.right);
+    System.out.print(node.data + " ");
+  }
+  
+  public Node createNewNode(int val) {
+    Node newNode = new Node();
+    newNode.data = val;
+    newNode.left = null;
+    newNode.right = null;
+    return newNode;
+  }
+}
+
+public class BinaryTreeApp {
+
+	public static void main(String[] args) {
+		  BinaryTree puu = new BinaryTree();
+		    
+		    Node root = puu.createNewNode(2);
+		    root.left = puu.createNewNode(7);
+		    root.right = puu.createNewNode(5);
+		    root.left.left = puu.createNewNode(2);
+		    root.left.right = puu.createNewNode(6);
+		    root.left.right.left = puu.createNewNode(5);
+		    root.left.right.right = puu.createNewNode(11);
+		    root.right.right = puu.createNewNode(9);
+		    root.right.right.left = puu.createNewNode(4);
+		    
+		    System.out.print("Sisäjärjestys: ");
+		    puu.sisajarjesta(root);
+		    System.out.println();
+
+		    System.out.print("Esijärjestys: ");
+		    puu.esijarjesta(root);
+		    System.out.println();
+		    
+		    System.out.print("Jälkijärjestys: ");
+		    puu.jälkijärjestä(root);
+		    System.out.println();
+
+	}
+
+}

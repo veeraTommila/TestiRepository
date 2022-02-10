@@ -1,0 +1,52 @@
+
+class Solmu_IOP {
+	int key;
+    Solmu_IOP left, right;
+ 
+    public Solmu_IOP(int item)
+    {
+        key = item;
+        left = right = null;
+    }
+}
+
+class Binaaripuu{
+	Solmu_IOP root;
+	 
+    Binaaripuu() { root = null; }
+    void jalkijarjesta(Solmu_IOP solmu)
+    {
+        if (solmu == null)
+            return;
+ 
+        // first recur on left subtree
+        jalkijarjesta(solmu.left);
+ 
+        // then recur on right subtree
+        jalkijarjesta(solmu.right);
+ 
+        // now deal with the node
+        System.out.print(solmu.key + " ");
+    }
+    
+    void printInorder(Solmu_IOP solmu)
+    {
+        if (solmu == null)
+            return;
+ 
+        /* first recur on left child */
+        printInorder(solmu.left);
+ 
+        /* then print the data of node */
+        System.out.print(solmu.key + " ");
+ 
+        /* now recur on right child */
+        printInorder(solmu.right);
+    }
+    
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+}
+

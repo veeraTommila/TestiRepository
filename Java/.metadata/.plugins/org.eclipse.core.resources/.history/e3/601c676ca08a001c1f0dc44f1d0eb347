@@ -1,0 +1,83 @@
+
+//package binarytree;
+
+class Solmu {
+  Solmu left;
+  Solmu right;
+  int data;
+}
+
+class BinaryTree {
+  
+  public void sisajarjesta(Solmu solmu) {
+    if(solmu == null) {
+      return;
+    }
+    
+    sisajarjesta(solmu.left);
+    System.out.print(solmu.data + " ");
+    sisajarjesta(solmu.right);
+  }
+  
+  public void esijarjesta(Solmu solmu) {
+    if(solmu == null) {
+      return;
+    }
+    
+    System.out.print(solmu.data + " ");
+    esijarjesta(solmu.left);
+    esijarjesta(solmu.right);
+  }
+  
+  public void jälkijärjestä(Solmu solmu) {
+    if(solmu == null) {
+      return;
+    }
+    
+    jälkijärjestä(solmu.left);
+    jälkijärjestä(solmu.right);
+    System.out.print(solmu.data + " ");
+  }
+  
+  public Solmu createNewNode(int arvo) {
+    Solmu newNode = new Solmu();
+    newNode.data = arvo;
+    newNode.left = null;
+    newNode.right = null;
+    return newNode;
+  }
+}
+
+public class BinaryTreeApp {
+
+	public static void main(String[] args) {
+		  BinaryTree puu = new BinaryTree();
+		    
+		    Solmu root = puu.createNewNode(10);
+		    root.left = puu.createNewNode(5);
+		    root.right = puu.createNewNode(20);
+		    root.left.left = puu.createNewNode(3);
+		    root.left.right = puu.createNewNode(9);
+		    root.left.left.right = puu.createNewNode(4);
+		    root.left.left.left = puu.createNewNode(1);
+		    root.right.right = puu.createNewNode(25);
+		    root.right.left = puu.createNewNode(15);
+		    root.right.left.right = puu.createNewNode(17);
+		    root.right.left.left = puu.createNewNode(13);
+		    root.right.right.right = puu.createNewNode(30);
+		    
+		    System.out.print("Sisäjärjestys: ");
+		    puu.sisajarjesta(root);
+		    System.out.println();
+
+		    System.out.print("Esijärjestys: ");
+		    puu.esijarjesta(root);
+		    System.out.println();
+		    
+		    System.out.print("Jälkijärjestys: ");
+		    puu.jälkijärjestä(root);
+		    System.out.println();
+
+	}
+
+}

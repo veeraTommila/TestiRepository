@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="Solmu"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="Node"/>
+			<item value="node"/>
+			<item value="printInorder"/>
+			<item value="sisajarjesta"/>
+			<item value="key"/>
+			<item value="BST"/>
+			<item value="data"/>
+			<item value="left"/>
+			<item value="Esijärjestä"/>
+			<item value="Jälkijärjestä"/>
+			<item value="Sisäjärjestä"/>
+			<item value="traversePostOrder"/>
+			<item value="traverseInOrder"/>
+			<item value="traversePreOrder"/>
+			<item value="bstree"/>
+		</list>
+		<list key="replacehistory">
+			<item value="Solmu"/>
+			<item value="solmu"/>
+			<item value="sisajarjesta"/>
+			<item value=""/>
+			<item value="avain"/>
+			<item value="PoisSolmu"/>
+			<item value="Puu"/>
+			<item value="tieto"/>
+			<item value="Solmu2"/>
+			<item value="right"/>
+			<item value="Esijärjestetty:"/>
+			<item value="Jälkijärjestetty:"/>
+			<item value="Sisäjärjestetty:"/>
+			<item value="jalkijarjesta"/>
+			<item value="esijarjesta"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="210"/>
+		<item key="DIALOG_Y_ORIGIN" value="856"/>
+		<item key="DIALOG_WIDTH" value="322"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

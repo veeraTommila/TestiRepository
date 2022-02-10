@@ -1,0 +1,58 @@
+
+public class Solmu {
+	//Bin‰‰rihaun toteutukseen. 
+		Solmu left, right;
+		int tieto;
+		public Solmu(int tieto) {	//Julkinen olion muodostinfunktio Solmu.
+			this.tieto = tieto;
+		}
+		
+		public void lisaa(int arvo) {
+			if (arvo <= tieto) {
+				if (left == null) {	//Jos vasen haara on tyhj‰.
+					left = new Solmu(arvo);	//Jos siell‰ ei ole vasenta solmua, lis‰t‰‰n solmu.
+				} else {
+					left.lisaa(arvo);
+				}
+			} else {
+				if  (right == null) {	//Jos oikea haara on tyhj‰. 
+					right = new Solmu(arvo);	//Jos ei ole oikeata solmua, lis‰t‰‰n solmu.
+				} else {
+					right.lisaa(arvo);
+				}
+			}
+		}
+		
+		public boolean sisaltaa(int arvo) {
+			 if (arvo == tieto) {
+				 return true;
+			 } else if ( arvo < tieto) {
+				 if ( left == null) {
+					 return false;
+				 } else {
+					 return left.sisaltaa(arvo);
+				 }				
+			 } else {
+				 if (right == null) {
+					 return false;
+				 } else {
+					 return right.sisaltaa(arvo);
+				 }
+			 }
+		}
+		
+		public void tulostaJarjestyksessa() {
+			if (left != null) {	//Jos vasen lapsi on olemassa, tulostetaan se ensin ulos.
+				left.tulostaJarjestyksessa();
+			}
+			System.out.println(tieto);	//Tulostetaan tieto.
+			if (right != null) {	//Jos oikea lapsi on olemassa, tulostetaan se ensin ulos.
+				right.tulostaJarjestyksessa();
+			}
+		}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

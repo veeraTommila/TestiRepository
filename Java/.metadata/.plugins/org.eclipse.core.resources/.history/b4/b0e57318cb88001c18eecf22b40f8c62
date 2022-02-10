@@ -1,0 +1,97 @@
+
+public class StringSolmu {
+	//Binäärihaun toteutukseen. 
+	Solmu left, right;
+	String tieto;
+	
+	
+	public Solmu(String tieto) {	//Julkinen olion muodostinfunktio Solmu.
+		this.tieto = tieto;
+		return;
+	}
+	
+	public void lisaaSolmu(String arvo) {
+		if (arvo != tieto) {
+			if (left == null) {	//Jos vasen haara on tyhjä.
+				left = new Solmu(arvo);	//Jos siellä ei ole vasenta solmua, lisätään solmu.
+			} else {
+				left.lisaaSolmu(arvo);
+			}
+		} else {
+			if  (right == null) {	//Jos oikea haara on tyhjä. 
+				right = new Solmu(arvo);	//Jos ei ole oikeata solmua, lisätään solmu.
+			} else {
+				right.lisaaSolmu(arvo);
+			}
+		}
+	}
+	
+	public void poistaSolmu(int arvo) {
+		if (arvo >= tieto) {
+			if (left != null) {	
+				left = new Solmu(arvo);	
+			} else {
+				left.poistaSolmu(arvo);
+			}
+		} else {
+			if  (right != null) {	
+				right = new Solmu(arvo);	
+			} else {
+				right.poistaSolmu(arvo);
+			}
+		}
+	}
+	
+	public boolean sisaltaa(int arvo) {
+		 if (arvo == tieto) {
+			 return true;
+		 } else if ( arvo < tieto) {
+			 if ( left == null) {
+				 return false;
+			 } else {
+				 return left.sisaltaa(arvo);
+			 }				
+		 } else {
+			 if (right == null) {
+				 return false;
+			 } else {
+				 return right.sisaltaa(arvo);
+			 }
+		 }
+	}
+	
+	public void printInOrder() {
+		if (left != null) {	//Jos vasen lapsi on olemassa, tulostetaan se ensin ulos.
+			left.printInOrder();
+		}
+		System.out.println("Solmu: "+tieto);	//Tulostetaan tieto.
+		if (right != null) {	//Jos oikea lapsi on olemassa, tulostetaan se ensin ulos.
+			right.printInOrder();
+		}
+	}
+	
+public static void main(String[] args) {
+	//Luodaan olio binääripuun muodostukseen.
+	Solmu solmu1 = new Solmu(10); //Alkuarvo = puun juurinumero on 10.
+	
+	//Lisätään solmuja binääripuuhun. 
+	solmu1.lisaaSolmu(9);
+	solmu1.lisaaSolmu(11);
+	solmu1.lisaaSolmu(2);
+	solmu1.lisaaSolmu(19);
+	solmu1.lisaaSolmu(3);
+	solmu1.lisaaSolmu(20);
+	
+	//Tulostetaan binääripuun solmut. Huomaa tulostusjärjestyksen ero!
+	solmu1.printInOrder();
+	
+	System.out.println("");
+	
+	solmu1.poistaSolmu(19);
+	solmu1.poistaSolmu(9);
+	
+	solmu1.printInOrder();
+
+}
+
+}

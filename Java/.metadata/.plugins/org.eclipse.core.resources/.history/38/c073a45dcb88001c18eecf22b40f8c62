@@ -1,0 +1,102 @@
+
+public class StringSolmu {
+	//Bin‰‰rihaun toteutukseen. 
+	private String tieto;
+	private StringSolmu left;
+	private StringSolmu right;
+	
+	
+	public StringSolmu() {	//Julkinen olion muodostinfunktio StringSolmu.
+		this.tieto = null;
+		this.right = null;
+		this.left = null;
+	}
+	
+	public StringSolmu(String tieto) {	
+		this.tieto = tieto;
+		this.right = null;
+		this.left = null;
+	}
+	
+	public static StringSolmu luoPuu(String sisalto) {
+		StringSolmu solmukirjain = new StringSolmu();
+		if(sisalto != null) {
+			//Poista v‰limerkit sis‰llˆst‰.
+			sisalto = sisalto.replaceAll("(\\w+)\\p{Punct}(\\s|$)", "$1$2");
+			String[]merkit = sisalto.split("");
+			for(int i = 0; i &lt; merkit.length; i++) {
+				solmukirjain.lisaaSolmu(merkit[i]);
+			}
+		}
+		return solmukirjain;
+	}
+	public void lisaaSolmu(String tieto) {
+		if(this.tieto == null) {
+			this.tieto = tieto;
+		} else {
+			if (this.tieto.compareTo(tieto)&lt; 0) {
+				if (this.left != null) {
+					this.left.lisaaSolmu(tieto);
+				} else {
+					this.left = new StringSolmu(tieto);
+				}
+		} else {
+			if (this.right != null) {
+				this.right.lisaaSolmu(tieto);
+			}
+			}
+		}
+	}
+	
+	public void esijarjesta() {
+		System.out.println(this.tieto);
+		if (this.left != null) {
+			this.left.esijarjesta();
+		}
+		if (this.right != null) {
+			this.right.esijarjesta();
+		}
+	}
+	
+	public void sisajarjesta() {
+		System.out.println(this.tieto);
+		if (this.left != null) {
+			this.left.sisajarjesta();
+		}
+		if (this.right != null) {
+			this.right.sisajarjesta();
+		}
+	}
+
+	public void jalkijarjesta() {
+		System.out.println(this.tieto);
+		if (this.left != null) {
+			this.left.jalkijarjesta();
+		}
+		if (this.right != null) {
+			this.right.jalkijarjesta();
+		}
+	}
+
+
+	
+	
+public static void main(String[] args) {
+	//Luodaan olio bin‰‰ripuun muodostukseen.	
+	StringSolmu solmukirjain = new StringSolmu();
+	//Lis‰t‰‰n StringSolmuja bin‰‰ripuuhun. 
+	solmukirjain.lisaaSolmu("F");
+	solmukirjain.lisaaSolmu("C");
+	solmukirjain.lisaaSolmu("A");
+	solmukirjain.lisaaSolmu("I");
+	solmukirjain.lisaaSolmu("D");
+	solmukirjain.lisaaSolmu("E");
+	solmukirjain.lisaaSolmu("J");
+	solmukirjain.lisaaSolmu("H");
+	solmukirjain.lisaaSolmu("B");
+	//Tulostetaan bin‰‰ripuun StringSolmut. Huomaa tulostusj‰rjestyksen ero!
+	
+
+}
+
+}

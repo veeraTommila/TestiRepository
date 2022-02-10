@@ -1,0 +1,95 @@
+
+class Solmu {
+	int avain;
+    Solmu left, right;
+ 
+    public Solmu(int item)
+    {
+        avain = item;
+        left = right = null;
+    }
+}
+ 
+class BinaryTree {
+    // Root of Binary Tree
+    Solmu root;
+ 
+    BinaryTree() { root = null; }
+ 
+    /* Given a binary tree, print its Solmus according to the
+      "bottom-up" postorder traversal. */
+    void printPostorder(Solmu Solmu)
+    {
+        if (Solmu == null)
+            return;
+ 
+        // first recur on left subtree
+        printPostorder(Solmu.left);
+ 
+        // then recur on right subtree
+        printPostorder(Solmu.right);
+ 
+        // now deal with the Solmu
+        System.out.print(Solmu.avain + " ");
+    }
+ 
+    /* Given a binary tree, print its Solmus in inorder*/
+    void printInorder(Solmu Solmu)
+    {
+        if (Solmu == null)
+            return;
+ 
+        /* first recur on left child */
+        printInorder(Solmu.left);
+ 
+        /* then print the data of Solmu */
+        System.out.print(Solmu.avain + " ");
+ 
+        /* now recur on right child */
+        printInorder(Solmu.right);
+    }
+ 
+    /* Given a binary tree, print its Solmus in preorder*/
+    void printPreorder(Solmu Solmu)
+    {
+        if (Solmu == null)
+            return;
+ 
+        /* first print data of Solmu */
+        System.out.print(Solmu.avain + " ");
+ 
+        /* then recur on left subtree */
+        printPreorder(Solmu.left);
+ 
+        /* now recur on right subtree */
+        printPreorder(Solmu.right);
+    }
+ 
+    // Wrappers over above recursive functions
+    void printPostorder() { printPostorder(root); }
+    void printInorder() { printInorder(root); }
+    void printPreorder() { printPreorder(root); }
+    
+	public static void main(String[] args) {
+		BinaryTree tree = new BinaryTree();
+        tree.root = new Solmu(1);
+        tree.root.left = new Solmu(2);
+        tree.root.right = new Solmu(3);
+        tree.root.left.left = new Solmu(4);
+        tree.root.left.right = new Solmu(5);
+ 
+        System.out.println(
+            "Preorder traversal of binary tree is ");
+        tree.printPreorder();
+ 
+        System.out.println(
+            "\nInorder traversal of binary tree is ");
+        tree.printInorder();
+ 
+        System.out.println(
+            "\nPostorder traversal of binary tree is ");
+        tree.printPostorder();
+    }
+	
+
+}

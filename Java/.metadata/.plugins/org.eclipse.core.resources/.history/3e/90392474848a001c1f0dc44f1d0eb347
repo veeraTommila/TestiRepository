@@ -1,0 +1,98 @@
+// Java program for different tree traversals
+
+/* Class containing left and right child of current
+node and key value*/
+class Solmu {
+	int key;
+	Solmu left, right;
+
+	public Solmu(int item)
+	{
+		key = item;
+		left = right = null;
+	}
+}
+
+class Binaaripuu {
+	// Root of Binary Tree
+	Solmu root;
+
+	Binaaripuu() { root = null; }
+
+	/* Given a binary tree, print its nodes according to the
+	"bottom-up" postorder traversal. */
+	void printPostorder(Solmu solmu)
+	{
+		if (solmu == null)
+			return;
+
+		// first recur on left subtree
+		printPostorder(solmu.left);
+
+		// then recur on right subtree
+		printPostorder(solmu.right);
+
+		// now deal with the node
+		System.out.print(solmu.key + " ");
+	}
+
+	/* Given a binary tree, print its nodes in inorder*/
+	void printInorder(Solmu solmu)
+	{
+		if (solmu == null)
+			return;
+
+		/* first recur on left child */
+		printInorder(solmu.left);
+
+		/* then print the data of node */
+		System.out.print(solmu.key + " ");
+
+		/* now recur on right child */
+		printInorder(solmu.right);
+	}
+
+	/* Given a binary tree, print its nodes in preorder*/
+	void printPreorder(Solmu solmu)
+	{
+		if (solmu == null)
+			return;
+
+		/* first print data of node */
+		System.out.print(solmu.key + " ");
+
+		/* then recur on left subtree */
+		printPreorder(solmu.left);
+
+		/* now recur on right subtree */
+		printPreorder(solmu.right);
+	}
+
+	// Wrappers over above recursive functions
+	void printPostorder() { printPostorder(root); }
+	void printInorder() { printInorder(root); }
+	void printPreorder() { printPreorder(root); }
+
+	// Driver method
+	public static void main(String[] args)
+	{
+		Binaaripuu Binapuu = new Binaaripuu();
+		Binapuu.root = new Solmu(1);
+		Binapuu.root.left = new Solmu(2);
+		Binapuu.root.right = new Solmu(3);
+		Binapuu.root.left.left = new Solmu(4);
+		Binapuu.root.left.right = new Solmu(5);
+
+		System.out.println(
+			"Preorder traversal of binary tree is ");
+		Binapuu.printPreorder();
+
+		System.out.println(
+			"\nInorder traversal of binary tree is ");
+		Binapuu.printInorder();
+
+		System.out.println(
+			"\nPostorder traversal of binary tree is ");
+		Binapuu.printPostorder();
+	}
+
