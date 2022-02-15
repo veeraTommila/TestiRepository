@@ -60,7 +60,7 @@ public class BinaryStringTree {
         }
     }
      
-    //Juurisolmu, vasen lapsi, oikea lapsi. Virallinen järjestys puussa.
+    //Juurisolmu, vasen lapsi, oikea lapsi. Virallinen jï¿½rjestys puussa.
     public void esijarjesta() {        
     	System.out.println("Solmu: " + this.tieto);
         if (this.right != null) {        	
@@ -71,7 +71,7 @@ public class BinaryStringTree {
         }
     }
     
-    //Mitkä aakkoset ovat vasemmassa ja mitkä oikeassa alipuussa.
+    //Mitkï¿½ aakkoset ovat vasemmassa ja mitkï¿½ oikeassa alipuussa.
     public void tellLeftRight() {        
     	System.out.println("Solmu: " + this.tieto);
         if (this.right != null) {
@@ -138,7 +138,7 @@ public class BinaryStringTree {
         System.out.println("Puu1: ");
         binaaripuu1.esijarjesta();
         System.out.println(" ");
-        System.out.println("Mitkä missä:");
+        System.out.println("Mitkï¿½ missï¿½:");
         binaaripuu1.tellLeftRight();
         System.out.println(" ");
         System.out.println("Puu1 printorder ");
@@ -160,7 +160,7 @@ public class BinaryStringTree {
         System.out.println("Puu2: ");
         binaaripuu2.esijarjesta();
         System.out.println(" ");
-        System.out.println("Mitkä missä:");
+        System.out.println("Mitkï¿½ missï¿½:");
         binaaripuu2.tellLeftRight();
 
         
@@ -180,7 +180,7 @@ public class BinaryStringTree {
         System.out.println("Puu3: ");
         binaaripuu3.esijarjesta();
         System.out.println(" ");
-        System.out.println("Mitkä missä:");
+        System.out.println("Mitkï¿½ missï¿½:");
         binaaripuu3.tellLeftRight();
 	}
 
