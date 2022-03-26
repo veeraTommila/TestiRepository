@@ -138,7 +138,7 @@ public class BinaryStringTree {
         System.out.println("Puu1: ");
         binaaripuu1.esijarjesta();
         System.out.println(" ");
-        System.out.println("Mitk� miss�:");
+        System.out.println("Mitkä missä:");
         binaaripuu1.tellLeftRight();
         System.out.println(" ");
         System.out.println("Puu1 printorder ");
@@ -160,7 +160,7 @@ public class BinaryStringTree {
         System.out.println("Puu2: ");
         binaaripuu2.esijarjesta();
         System.out.println(" ");
-        System.out.println("Mitk� miss�:");
+        System.out.println("Mitkä missä:");
         binaaripuu2.tellLeftRight();
 
         
@@ -180,7 +180,7 @@ public class BinaryStringTree {
         System.out.println("Puu3: ");
         binaaripuu3.esijarjesta();
         System.out.println(" ");
-        System.out.println("Mitk� miss�:");
+        System.out.println("Mitkä missä:");
         binaaripuu3.tellLeftRight();
 	}
 
